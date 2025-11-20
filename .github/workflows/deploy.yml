@@ -34,12 +34,17 @@ jobs:
       - name: Determine base path
         id: base_path
         run: |
-          # For GitHub Pages project pages, use repository name as base path
-          # For custom domains (when DNS is configured), the base will be '/'
-          # Since DNS might not be active yet, always use project page base for now
-          REPO_NAME="${{ github.event.repository.name }}"
-          echo "base=/$REPO_NAME/" >> $GITHUB_OUTPUT
-          echo "Using GitHub Pages project page - base path: /$REPO_NAME/"
+          # Check if CNAME exists for custom domain
+          if [ -f "public/CNAME" ]; then
+            # Use root base path for custom domain
+            echo "base=/" >> $GITHUB_OUTPUT
+            echo "Using custom domain - base path: /"
+          else
+            # Use repository name as base path for project page
+            REPO_NAME="${{ github.event.repository.name }}"
+            echo "base=/$REPO_NAME/" >> $GITHUB_OUTPUT
+            echo "Using GitHub Pages project page - base path: /$REPO_NAME/"
+          fi
       
       - name: Build
         env:
