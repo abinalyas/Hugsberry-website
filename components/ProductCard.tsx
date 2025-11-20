@@ -131,14 +131,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               
               {/* Copy Notification Toast */}
               {showCopied && (
-                <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-hugsberry-navy text-white px-4 py-3 rounded-lg shadow-xl z-50 whitespace-nowrap animate-fade-in">
+                <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-hugsberry-navy text-white px-4 py-3 rounded-lg shadow-2xl z-[9999] whitespace-nowrap animate-fade-in">
                   <div className="flex items-center gap-2">
-                    <Check size={18} className="text-hugsberry-green" />
+                    <Check size={18} className="text-hugsberry-green flex-shrink-0" />
                     <span className="text-sm font-medium">Message copied! Paste in Instagram DM</span>
-                  </div>
-                  {/* Arrow pointing down */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
-                    <div className="border-4 border-transparent border-t-hugsberry-navy"></div>
                   </div>
                 </div>
               )}
