@@ -4,7 +4,7 @@ import HugsberryLogo from './components/HugsberryLogo';
 import AnimatedHugsberryLogo from './components/AnimatedHugsberryLogo';
 import ProductCard from './components/ProductCard';
 import { PRODUCTS, TESTIMONIALS, INSTAGRAM_URL } from './constants';
-import { ArrowRight, Star, Leaf, Heart, Instagram, Recycle, Droplets, Sun } from 'lucide-react';
+import { ArrowRight, Star, Leaf, Heart, Instagram, Recycle, Droplets, Sun, Mail } from 'lucide-react';
 
 // Helper to get image path with base URL
 const getImagePath = (path: string): string => {
@@ -136,7 +136,7 @@ const App: React.FC = () => {
       </div>
 
       {/* --- SHOPPING SECTION: SINGLE COLLECTION --- */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-hugsberry-green font-bold tracking-widest uppercase text-sm mb-2 block">Small Batch • Big Love</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-hugsberry-navy mb-4">
@@ -194,7 +194,7 @@ const App: React.FC = () => {
       </section>
 
       {/* --- ABOUT / VISION SECTION --- */}
-      <section className="py-20">
+      <section id="about" className="py-20">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center shadow-sm border border-gray-100">
                <div className="w-full md:w-1/2">
@@ -266,17 +266,33 @@ const App: React.FC = () => {
 
       {/* --- FOOTER --- */}
       <footer className="bg-hugsberry-navy text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 mt-auto">
-         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+         <div className="max-w-7xl mx-auto">
+           {/* Main Footer Content */}
+           <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-12">
             <div className="text-center md:text-left">
                <div className="bg-white/10 p-4 rounded-2xl inline-block mb-4">
                  <HugsberryLogo size="md" className="brightness-0 invert" />
                </div>
-               <p className="text-gray-300 text-sm max-w-xs mx-auto md:mx-0">
+               <p className="text-gray-300 text-sm max-w-xs mx-auto md:mx-0 mb-4">
                  Handmade with love in India. Sustainable, culturally rooted, and safe for your little explorer.
                </p>
+               
+               {/* Contact Information */}
+               <div className="text-gray-300 text-sm space-y-2 max-w-xs mx-auto md:mx-0">
+                 <p className="font-semibold text-white mb-3">Connect With Us:</p>
+                 <p className="flex items-center gap-2">
+                   <Mail size={18} className="text-hugsberry-green flex-shrink-0" />
+                   <a href="mailto:info@hugsberry.in" className="hover:text-hugsberry-green transition-colors break-all">
+                     info@hugsberry.in
+                   </a>
+                 </p>
+                 <p className="text-xs text-gray-400 mt-3 pt-3 border-t border-white/10">
+                   Online-only store. Shop via Instagram DM.
+                 </p>
+               </div>
             </div>
             
-            <div>
+            <div className="flex flex-col items-center md:items-end gap-4">
                <a 
                  href={INSTAGRAM_URL} 
                  target="_blank" 
@@ -286,15 +302,25 @@ const App: React.FC = () => {
                  <Instagram size={20} />
                  @hugs.berry
                </a>
+               
+               {/* Quick Links */}
+               <div className="flex flex-col items-center md:items-end gap-2 text-sm">
+                 <p className="text-white font-semibold mb-1">Quick Links</p>
+                 <a href="#products" className="text-gray-300 hover:text-hugsberry-green transition-colors">Our Products</a>
+                 <a href="#about" className="text-gray-300 hover:text-hugsberry-green transition-colors">About Us</a>
+                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-hugsberry-green transition-colors">Instagram Shop</a>
+               </div>
             </div>
          </div>
 
-         <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-            <p>© 2024 Hugsberry. All rights reserved.</p>
+         {/* Footer Bottom */}
+         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+            <p>© 2024 HugsBerry. All rights reserved. | Made with ❤️ in Kerala, India</p>
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-white">Privacy Policy</a>
-              <a href="#" className="hover:text-white">Terms of Service</a>
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             </div>
+         </div>
          </div>
       </footer>
     </div>
