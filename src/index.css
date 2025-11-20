@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-hugsberry-navy: #1C2E4A;
+  --color-hugsberry-green: #2ECC71;
+  --color-hugsberry-cream: #FFFDF7;
+  --color-hugsberry-yellow: #FFD54F;
+  --color-hugsberry-pink: #FF8A80;
+  --color-hugsberry-blue: #64B5F6;
+  --color-hugsberry-red: #FF5252;
+  
+  --font-family-sans: 'Quicksand', sans-serif;
+  --font-family-display: 'Fredoka', cursive;
+  
+  --radius-4xl: 2.5rem;
+}
+
 /* Custom scrollbar for a cleaner look */
 ::-webkit-scrollbar {
   width: 8px;
