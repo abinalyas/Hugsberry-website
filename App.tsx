@@ -169,21 +169,21 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* --- PROMO BANNER (Newborn Focus) --- */}
+      {/* --- PROMO BANNER (10% Off) --- */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto bg-hugsberry-navy rounded-[3rem] p-8 md:p-12 relative overflow-hidden text-white shadow-2xl shadow-blue-900/20">
            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
              <div>
-                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-bold mb-4">Bestseller</div>
+                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-bold mb-4">Limited Offer</div>
                 <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-                  The Welcome Baby Kit
+                  10% Off
                 </h2>
                 <p className="text-white/80 text-lg mb-6 max-w-md">
-                  A curated set of our softest organic cotton jhablas and nappies. The perfect gift for a new Indian mom. Use code <span className="font-mono font-bold text-hugsberry-yellow">HELLO-BABY</span> in DM.
+                  Get 10% off on all products! Shop our premium organic cotton kidswear and enjoy special pricing. Mention this offer in your DM when ordering.
                 </p>
              </div>
              <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-block bg-hugsberry-yellow text-hugsberry-navy font-bold px-10 py-5 rounded-full shadow-lg hover:scale-105 transition-transform whitespace-nowrap">
-               Order via DM
+               Shop Now
              </a>
            </div>
            

@@ -11,6 +11,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     return `₹${price.toLocaleString('en-IN')}`;
   };
 
+  // Create Instagram DM link with product details
+  // Instagram doesn't support direct DM links with pre-filled text in browser
+  // So we'll link to the profile and users can DM from there
+  // For mobile apps, this will open in Instagram app
+  const getInstagramDMUrl = (productName: string) => {
+    // Link to Instagram profile - users can DM from there
+    // On mobile, this opens in Instagram app
+    return INSTAGRAM_URL;
+  };
+
   return (
     <div className="group cursor-pointer">
       <a
@@ -50,7 +60,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <h3 className="font-display font-bold text-xl text-hugsberry-navy mb-2 group-hover:text-hugsberry-green transition-colors">
               {product.name}
             </h3>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-baseline gap-2">
                 <span className="text-2xl font-bold text-hugsberry-navy">
                   {formatPrice(product.price)}
@@ -62,6 +72,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 )}
               </div>
             </div>
+            {/* Buy Now Button */}
+            <a
+              href={getInstagramDMUrl(product.name)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="block w-full text-center px-4 py-2.5 rounded-full bg-hugsberry-green text-white font-bold text-sm hover:bg-hugsberry-navy hover:shadow-lg transition-all duration-300"
+            >
+              Buy Now
+            </a>
           </div>
         </div>
       </a>
