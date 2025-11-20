@@ -13,7 +13,7 @@ const getImagePath = (path: string): string => {
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Strawberry Fields Smocked Dress",
+    name: "Winter Glow Smocked Dress",
     price: 1899,
     category: "Heritage",
     image: getImagePath("images/IMG_3101.jpg"), 
@@ -21,14 +21,14 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 2,
-    name: "Little Lion Organic Lounge Set",
+    name: "Berry Bloom Knit Set",
     price: 1499,
     category: "Everyday",
     image: getImagePath("images/IMG_3103.jpg"), 
   },
   {
     id: 3,
-    name: "Nordic Pine Festive Set",
+    name: "Whispering Pines Holiday Set",
     price: 1299,
     category: "Winter Edit",
     image: getImagePath("images/IMG_3104.jpg"), 
@@ -36,14 +36,14 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 4,
-    name: "Polar Pals Zip Suit",
+    name: "Forest Friends Sleep Suit",
     price: 999,
     category: "Sleepwear",
     image: getImagePath("images/IMG_3102.jpg"), 
   },
   {
     id: 5,
-    name: "Signature Hugsberry Vest",
+    name: "Snuggle Nest Organic Vest",
     price: 799,
     category: "Essentials",
     image: getImagePath("images/IMG_3105.jpg"), 
@@ -56,20 +56,20 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Anu Menon",
     role: "Mom in Kochi",
     content: "Finally, a brand that understands both tradition and comfort! The strawberry dress reminded me of my own childhood.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+    avatar: getImagePath("images/Review/IMG_0199.JPG")
   },
   {
     id: 2,
     name: "Radhika Iyer",
     role: "Mom in Mumbai",
     content: "I ordered the Lion set for my son. The organic cotton is so soft, he refuses to take it off! Highly recommend.",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+    avatar: getImagePath("images/Review/IMG_5560.jpg")
   },
   {
     id: 3,
     name: "Neha Gupta",
     role: "New Mom, Delhi",
     content: "The plastic-free packaging was a lovely surprise. You can feel the quality of the fabric immediately.",
-    avatar: "https://randomuser.me/api/portraits/women/32.jpg"
+    avatar: getImagePath("images/Review/IMG_6003.JPG")
   }
 ];
