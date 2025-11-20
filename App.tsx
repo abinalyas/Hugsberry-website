@@ -50,9 +50,9 @@ const App: React.FC = () => {
                   href={INSTAGRAM_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-2.5 md:px-10 md:py-4 rounded-full bg-hugsberry-navy text-white font-bold text-sm md:text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2.5 md:gap-3 px-6 py-2.5 md:px-10 md:py-4 rounded-full bg-hugsberry-navy text-white font-bold text-sm md:text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
                 >
-                  <Instagram className="mr-2" size={18} className="md:w-6 md:h-6" />
+                  <Instagram size={18} className="md:w-6 md:h-6 flex-shrink-0" />
                   Shop on Instagram
                 </a>
               </div>
