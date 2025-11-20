@@ -17,6 +17,15 @@
   --radius-4xl: 2.5rem;
 }
 
+/* Ensure font classes are available */
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.font-display {
+  font-family: var(--font-family-display);
+}
+
 /* Custom scrollbar for a cleaner look */
 ::-webkit-scrollbar {
   width: 8px;
