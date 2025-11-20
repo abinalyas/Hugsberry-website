@@ -69,17 +69,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
 
           {/* Product Info */}
-          <div className="p-6">
-            <h3 className="font-display font-bold text-xl text-hugsberry-navy mb-2 group-hover:text-hugsberry-green transition-colors">
+          <div className="p-4 md:p-6">
+            <h3 className="font-display font-bold text-base md:text-xl text-hugsberry-navy mb-2 group-hover:text-hugsberry-green transition-colors">
               {product.name}
             </h3>
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-3 md:mb-4">
               <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-bold text-hugsberry-navy">
+                <span className="text-xl md:text-2xl font-bold text-hugsberry-navy">
                   {formatPrice(product.price)}
                 </span>
                 {product.originalPrice && product.originalPrice > product.price && (
-                  <span className="text-sm text-gray-400 line-through">
+                  <span className="text-xs md:text-sm text-gray-400 line-through">
                     {formatPrice(product.originalPrice)}
                   </span>
                 )}

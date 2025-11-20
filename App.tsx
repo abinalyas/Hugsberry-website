@@ -20,7 +20,7 @@ const App: React.FC = () => {
       <Navbar />
 
       {/* --- HERO SECTION: HERITAGE & ORGANIC --- */}
-      <header className="relative pt-28 pb-16 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <header className="relative pt-20 pb-12 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background Elements - Soft Organic Blobs */}
         <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-hugsberry-green/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 -z-10"></div>
         <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-hugsberry-blue/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 -z-10"></div>
@@ -30,29 +30,29 @@ const App: React.FC = () => {
             
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-hugsberry-green/20 text-hugsberry-green font-bold text-sm shadow-sm mb-6">
-                 <Leaf size={16} />
-                 <span>Ethical. Handmade. Culturally Rooted.</span>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white border border-hugsberry-green/20 text-hugsberry-green font-bold text-xs md:text-sm shadow-sm mb-4 md:mb-6">
+                 <Leaf size={14} className="md:w-4 md:h-4" />
+                 <span className="text-xs md:text-sm">Ethical. Handmade. Culturally Rooted.</span>
               </div>
               
-              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-hugsberry-navy leading-[0.95] mb-8 tracking-tight">
+              <h1 className="font-display text-3xl md:text-7xl lg:text-8xl font-extrabold text-hugsberry-navy leading-[0.95] mb-4 md:mb-8 tracking-tight">
                 Roots <br/>
                 Woven with <br/>
                 <span className="text-hugsberry-green">Pure Love</span>
               </h1>
               
-              <p className="text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-600 mb-6 md:mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Premium organic kidswear inspired by our heritage. From festive favorites to everyday essentials, made for your little one's big adventures.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
                 <a 
                   href={INSTAGRAM_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-hugsberry-navy text-white font-bold text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-6 py-2.5 md:px-10 md:py-4 rounded-full bg-hugsberry-navy text-white font-bold text-sm md:text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
                 >
-                  <Instagram className="mr-2" size={24} />
+                  <Instagram className="mr-2" size={18} className="md:w-6 md:h-6" />
                   Shop on Instagram
                 </a>
               </div>
@@ -72,9 +72,9 @@ const App: React.FC = () => {
                 />
                  
                  {/* Floating Sticker */}
-                 <div className="absolute -bottom-6 -left-6 z-20 bg-white p-5 rounded-full shadow-xl flex flex-col items-center justify-center w-36 h-36 rotate-12 border-4 border-hugsberry-cream">
-                    <span className="font-display font-bold text-3xl text-hugsberry-navy">100%</span>
-                    <span className="text-xs font-bold text-hugsberry-green uppercase tracking-wider text-center">Homegrown</span>
+                 <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 z-20 bg-white p-3 md:p-5 rounded-full shadow-xl flex flex-col items-center justify-center w-24 h-24 md:w-36 md:h-36 rotate-12 border-2 md:border-4 border-hugsberry-cream">
+                    <span className="font-display font-bold text-xl md:text-3xl text-hugsberry-navy">100%</span>
+                    <span className="text-[10px] md:text-xs font-bold text-hugsberry-green uppercase tracking-wider text-center">Homegrown</span>
                  </div>
                </div>
             </div>
@@ -83,51 +83,51 @@ const App: React.FC = () => {
       </header>
 
       {/* --- VALUE PROPS STRIP (ECO BADGES) --- */}
-      <div className="bg-white border-y border-gray-100 py-12 overflow-hidden">
+      <div className="bg-white border-y border-gray-100 py-8 md:py-12 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-           <div className="flex flex-wrap justify-center md:justify-between gap-10 text-center md:text-left">
+           <div className="flex flex-wrap justify-center md:justify-between gap-6 md:gap-10 text-center md:text-left">
               
               {/* Badge 1: Organic */}
-              <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-green flex items-center justify-center text-hugsberry-green bg-hugsberry-green/5 group-hover:bg-hugsberry-green group-hover:text-white transition-colors duration-300">
-                   <Leaf size={32} strokeWidth={1.5} />
+              <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 group">
+                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-green flex items-center justify-center text-hugsberry-green bg-hugsberry-green/5 group-hover:bg-hugsberry-green group-hover:text-white transition-colors duration-300">
+                   <Leaf size={24} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">100% Organic</p>
-                   <p className="text-sm text-gray-500">Certified GOTS Cotton</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">100% Organic</p>
+                   <p className="text-xs md:text-sm text-gray-500">Certified GOTS Cotton</p>
                  </div>
               </div>
 
               {/* Badge 2: Handmade */}
-              <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-pink flex items-center justify-center text-hugsberry-pink bg-hugsberry-pink/5 group-hover:bg-hugsberry-pink group-hover:text-white transition-colors duration-300">
-                   <Heart size={32} strokeWidth={1.5} />
+              <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 group">
+                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-pink flex items-center justify-center text-hugsberry-pink bg-hugsberry-pink/5 group-hover:bg-hugsberry-pink group-hover:text-white transition-colors duration-300">
+                   <Heart size={24} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Ethically Handmade</p>
-                   <p className="text-sm text-gray-500">Fair wages for artisans</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Ethically Handmade</p>
+                   <p className="text-xs md:text-sm text-gray-500">Fair wages for artisans</p>
                  </div>
               </div>
 
               {/* Badge 3: Eco-Friendly */}
-              <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-blue flex items-center justify-center text-hugsberry-blue bg-hugsberry-blue/5 group-hover:bg-hugsberry-blue group-hover:text-white transition-colors duration-300">
-                   <Recycle size={32} strokeWidth={1.5} />
+              <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 group">
+                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-blue flex items-center justify-center text-hugsberry-blue bg-hugsberry-blue/5 group-hover:bg-hugsberry-blue group-hover:text-white transition-colors duration-300">
+                   <Recycle size={24} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Plastic-Free</p>
-                   <p className="text-sm text-gray-500">Sustainable Packaging</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Plastic-Free</p>
+                   <p className="text-xs md:text-sm text-gray-500">Sustainable Packaging</p>
                  </div>
               </div>
               
               {/* Badge 4: Safe */}
-              <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-yellow flex items-center justify-center text-hugsberry-yellow bg-hugsberry-yellow/5 group-hover:bg-hugsberry-yellow group-hover:text-hugsberry-navy transition-colors duration-300">
-                   <Sun size={32} strokeWidth={1.5} />
+              <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 group">
+                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-yellow flex items-center justify-center text-hugsberry-yellow bg-hugsberry-yellow/5 group-hover:bg-hugsberry-yellow group-hover:text-hugsberry-navy transition-colors duration-300">
+                   <Sun size={24} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Skin Safe</p>
-                   <p className="text-sm text-gray-500">Azo-free non-toxic dyes</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Skin Safe</p>
+                   <p className="text-xs md:text-sm text-gray-500">Azo-free non-toxic dyes</p>
                  </div>
               </div>
 
@@ -136,16 +136,16 @@ const App: React.FC = () => {
       </div>
 
       {/* --- SHOPPING SECTION: SINGLE COLLECTION --- */}
-      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <span className="text-hugsberry-green font-bold tracking-widest uppercase text-sm mb-2 block">Small Batch • Big Love</span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-hugsberry-navy mb-4">
+      <section id="products" className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <span className="text-hugsberry-green font-bold tracking-widest uppercase text-xs md:text-sm mb-2 block">Small Batch • Big Love</span>
+          <h2 className="font-display text-2xl md:text-5xl font-bold text-hugsberry-navy mb-3 md:mb-4">
             Fresh from the <span className="relative inline-block px-2 z-10">
               Loom
-              <div className="absolute bottom-2 left-0 w-full h-3 bg-hugsberry-yellow/60 -z-10 -rotate-2"></div>
+              <div className="absolute bottom-1 md:bottom-2 left-0 w-full h-2 md:h-3 bg-hugsberry-yellow/60 -z-10 -rotate-2"></div>
             </span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
             From heritage smocked dresses to cozy winter essentials. Discover our curated range for 0-5 years.
           </p>
         </div>
@@ -157,32 +157,32 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 md:mt-16 text-center">
            <a 
              href={INSTAGRAM_URL} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="inline-flex items-center gap-2 text-xl font-bold text-hugsberry-navy hover:text-hugsberry-green transition-colors border-b-2 border-hugsberry-navy hover:border-hugsberry-green pb-1"
+             className="inline-flex items-center gap-2 text-base md:text-xl font-bold text-hugsberry-navy hover:text-hugsberry-green transition-colors border-b-2 border-hugsberry-navy hover:border-hugsberry-green pb-1"
            >
-             See Full Catalog on Instagram <ArrowRight size={24} />
+             See Full Catalog on Instagram <ArrowRight size={18} className="md:w-6 md:h-6" />
            </a>
         </div>
       </section>
 
       {/* --- PROMO BANNER (10% Off) --- */}
-      <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto bg-hugsberry-navy rounded-[3rem] p-8 md:p-12 relative overflow-hidden text-white shadow-2xl shadow-blue-900/20">
-           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+      <section className="py-8 md:py-12 px-4">
+        <div className="max-w-5xl mx-auto bg-hugsberry-navy rounded-[2rem] md:rounded-[3rem] p-6 md:p-12 relative overflow-hidden text-white shadow-2xl shadow-blue-900/20">
+           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 text-center md:text-left">
              <div>
-                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-bold mb-4">Limited Offer</div>
-                <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+                <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 md:px-4 md:py-1 text-xs md:text-sm font-bold mb-3 md:mb-4">Limited Offer</div>
+                <h2 className="font-display text-2xl md:text-5xl font-bold mb-3 md:mb-4">
                   10% Off
                 </h2>
-                <p className="text-white/80 text-lg mb-6 max-w-md">
+                <p className="text-white/80 text-sm md:text-lg mb-4 md:mb-6 max-w-md mx-auto md:mx-0">
                   Get 10% off on all products! Shop our premium organic cotton kidswear and enjoy special pricing. Mention this offer in your DM when ordering.
                 </p>
              </div>
-             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-block bg-hugsberry-yellow text-hugsberry-navy font-bold px-10 py-5 rounded-full shadow-lg hover:scale-105 transition-transform whitespace-nowrap">
+             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-block bg-hugsberry-yellow text-hugsberry-navy font-bold px-6 py-3 md:px-10 md:py-5 rounded-full shadow-lg hover:scale-105 transition-transform whitespace-nowrap text-sm md:text-base">
                Shop Now
              </a>
            </div>
@@ -194,41 +194,41 @@ const App: React.FC = () => {
       </section>
 
       {/* --- ABOUT / VISION SECTION --- */}
-      <section id="about" className="py-20">
+      <section id="about" className="py-12 md:py-20">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-[2rem] md:rounded-[3rem] p-6 md:p-16 flex flex-col md:flex-row gap-8 md:gap-12 items-center shadow-sm border border-gray-100">
                <div className="w-full md:w-1/2">
-                  <div className="grid grid-cols-2 gap-4">
-                    <img className="rounded-2xl w-full h-48 object-cover -translate-y-4 shadow-md" src={getImagePath("images/IMG_3103.jpg")} alt="Cotton Fabric Texture" />
-                    <img className="rounded-2xl w-full h-48 object-cover translate-y-4 shadow-md" src={getImagePath("images/IMG_3102.jpg")} alt="Indian Baby playing" />
+                  <div className="grid grid-cols-2 gap-3 md:gap-4">
+                    <img className="rounded-xl md:rounded-2xl w-full h-32 md:h-48 object-cover -translate-y-2 md:-translate-y-4 shadow-md" src={getImagePath("images/IMG_3103.jpg")} alt="Cotton Fabric Texture" />
+                    <img className="rounded-xl md:rounded-2xl w-full h-32 md:h-48 object-cover translate-y-2 md:translate-y-4 shadow-md" src={getImagePath("images/IMG_3102.jpg")} alt="Indian Baby playing" />
                   </div>
                </div>
-               <div className="w-full md:w-1/2 space-y-6">
+               <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
                   {/* Animated Logo Here */}
-                  <AnimatedHugsberryLogo className="w-48 md:w-64 mb-4 origin-left" />
+                  <AnimatedHugsberryLogo className="w-32 md:w-64 mb-2 md:mb-4 origin-left mx-auto md:mx-0" />
                   
-                  <h3 className="font-display text-3xl font-bold text-hugsberry-navy">
+                  <h3 className="font-display text-2xl md:text-3xl font-bold text-hugsberry-navy text-center md:text-left">
                     Made for the future you want to create.
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center md:text-left">
                     Hugsberry was born from a simple wish: to blend timeless Indian aesthetics with modern ethical standards. We design premium-quality kidswear using organic materials like cotton and bamboo, celebrating our shared heritage while ensuring absolute comfort for every child.
                   </p>
-                  <p className="text-gray-600 leading-relaxed font-medium">
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed font-medium text-center md:text-left">
                     Our USP? Culturally rooted designs, hygienic handmade production, and sustainable packaging that cares for the world they will grow up in.
                   </p>
-                  <div className="pt-4">
-                     <p className="font-display font-bold text-xl text-hugsberry-navy mb-2">Why Hugsberry?</p>
-                     <ul className="space-y-3">
-                       <li className="flex items-center gap-2 text-gray-600">
-                         <Droplets size={18} className="text-hugsberry-blue" />
+                  <div className="pt-2 md:pt-4">
+                     <p className="font-display font-bold text-lg md:text-xl text-hugsberry-navy mb-2 text-center md:text-left">Why Hugsberry?</p>
+                     <ul className="space-y-2 md:space-y-3">
+                       <li className="flex items-center gap-2 text-sm md:text-base text-gray-600 justify-center md:justify-start">
+                         <Droplets size={16} className="md:w-[18px] md:h-[18px] text-hugsberry-blue flex-shrink-0" />
                          <span>Hypoallergenic Organic Fabrics</span>
                        </li>
-                       <li className="flex items-center gap-2 text-gray-600">
-                         <Leaf size={18} className="text-hugsberry-green" />
+                       <li className="flex items-center gap-2 text-sm md:text-base text-gray-600 justify-center md:justify-start">
+                         <Leaf size={16} className="md:w-[18px] md:h-[18px] text-hugsberry-green flex-shrink-0" />
                          <span>Culturally Rooted Designs</span>
                        </li>
-                       <li className="flex items-center gap-2 text-gray-600">
-                         <Sun size={18} className="text-hugsberry-yellow" />
+                       <li className="flex items-center gap-2 text-sm md:text-base text-gray-600 justify-center md:justify-start">
+                         <Sun size={16} className="md:w-[18px] md:h-[18px] text-hugsberry-yellow flex-shrink-0" />
                          <span>Transparent "Behind the Stitch" Story</span>
                        </li>
                      </ul>
@@ -239,24 +239,24 @@ const App: React.FC = () => {
       </section>
 
       {/* --- TESTIMONIALS --- */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto text-center mb-12">
-           <h2 className="font-display text-3xl font-bold text-hugsberry-navy mb-4">Moms Trust <span className="text-hugsberry-green">Hugsberry</span></h2>
-           <p className="text-gray-500">Hear from modern Indian parents who love us</p>
+      <section className="py-12 md:py-20 px-4">
+        <div className="max-w-7xl mx-auto text-center mb-8 md:mb-12">
+           <h2 className="font-display text-2xl md:text-3xl font-bold text-hugsberry-navy mb-2 md:mb-4">Moms Trust <span className="text-hugsberry-green">Hugsberry</span></h2>
+           <p className="text-sm md:text-base text-gray-500">Hear from modern Indian parents who love us</p>
         </div>
         
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
            {TESTIMONIALS.map(testimonial => (
-             <div key={testimonial.id} className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex text-hugsberry-yellow mb-4">
-                   {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
+             <div key={testimonial.id} className="bg-white p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex text-hugsberry-yellow mb-3 md:mb-4 justify-center md:justify-start">
+                   {[...Array(5)].map((_, i) => <Star key={i} size={14} className="md:w-4 md:h-4" fill="currentColor" />)}
                 </div>
-                <p className="text-hugsberry-navy font-medium leading-relaxed mb-6">"{testimonial.content}"</p>
-                <div className="flex items-center gap-3 border-t border-gray-5 pt-4">
-                   <img src={testimonial.avatar} alt={testimonial.name} className="w-10 h-10 rounded-full object-cover" />
+                <p className="text-sm md:text-base text-hugsberry-navy font-medium leading-relaxed mb-4 md:mb-6 text-center md:text-left">"{testimonial.content}"</p>
+                <div className="flex items-center gap-3 border-t border-gray-5 pt-3 md:pt-4 justify-center md:justify-start">
+                   <img src={testimonial.avatar} alt={testimonial.name} className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover flex-shrink-0" />
                    <div className="text-left">
-                      <h4 className="font-bold text-sm text-hugsberry-navy">{testimonial.name}</h4>
-                      <span className="text-xs text-gray-400">{testimonial.role}</span>
+                      <h4 className="font-bold text-xs md:text-sm text-hugsberry-navy">{testimonial.name}</h4>
+                      <span className="text-[10px] md:text-xs text-gray-400">{testimonial.role}</span>
                    </div>
                 </div>
              </div>
@@ -265,50 +265,50 @@ const App: React.FC = () => {
       </section>
 
       {/* --- FOOTER --- */}
-      <footer className="bg-hugsberry-navy text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 mt-auto">
+      <footer className="bg-hugsberry-navy text-white pt-12 md:pt-16 pb-6 md:pb-8 px-4 sm:px-6 lg:px-8 mt-auto">
          <div className="max-w-7xl mx-auto">
            {/* Main Footer Content */}
-           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
+           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-8 mb-8 md:mb-12">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
-               <div className="bg-white/10 p-4 rounded-2xl inline-block mb-4">
+               <div className="bg-white/10 p-3 md:p-4 rounded-xl md:rounded-2xl inline-block mb-3 md:mb-4">
                  <HugsberryLogo size="md" className="brightness-0 invert" />
                </div>
-               <p className="text-gray-300 text-sm max-w-xs mb-4">
+               <p className="text-gray-300 text-xs md:text-sm max-w-xs mb-3 md:mb-4">
                  Handmade with love in India. Sustainable, culturally rooted, and safe for your little explorer.
                </p>
                
                {/* Contact Information */}
-               <div className="text-gray-300 text-sm space-y-2 max-w-xs">
-                 <p className="font-semibold text-white mb-3">Connect With Us:</p>
+               <div className="text-gray-300 text-xs md:text-sm space-y-2 max-w-xs">
+                 <p className="font-semibold text-white mb-2 md:mb-3">Connect With Us:</p>
                  <p className="flex items-center gap-2 justify-center md:justify-start">
-                   <Mail size={18} className="text-hugsberry-green flex-shrink-0" />
+                   <Mail size={16} className="md:w-[18px] md:h-[18px] text-hugsberry-green flex-shrink-0" />
                    <a href="mailto:info@hugsberry.in" className="hover:text-hugsberry-green transition-colors break-all">
                      info@hugsberry.in
                    </a>
                  </p>
-                 <p className="text-xs text-gray-400 mt-3 pt-3 border-t border-white/10 text-center md:text-left">
+                 <p className="text-[10px] md:text-xs text-gray-400 mt-2 md:mt-3 pt-2 md:pt-3 border-t border-white/10 text-center md:text-left">
                    Online-only store. Shop via Instagram DM.
                  </p>
                </div>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-3 md:gap-4">
                <a 
                  href={INSTAGRAM_URL} 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="flex items-center gap-3 bg-white text-hugsberry-navy px-8 py-3 rounded-full font-bold hover:bg-hugsberry-yellow transition-colors"
+                 className="flex items-center gap-2 md:gap-3 bg-white text-hugsberry-navy px-6 py-2.5 md:px-8 md:py-3 rounded-full font-bold hover:bg-hugsberry-yellow transition-colors text-sm md:text-base"
                >
-                 <Instagram size={20} />
+                 <Instagram size={18} className="md:w-5 md:h-5" />
                  @hugs.berry
                </a>
             </div>
          </div>
 
          {/* Footer Bottom */}
-         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+         <div className="pt-6 md:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-[10px] md:text-xs text-gray-400">
             <p className="text-center md:text-left">© 2024 HugsBerry. All rights reserved. | Made with ❤️ in Kerala, India</p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-4 md:space-x-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             </div>
