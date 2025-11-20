@@ -57,11 +57,11 @@ const App: React.FC = () => {
                  <div className="absolute inset-4 bg-hugsberry-green/20 rounded-[3rem] rotate-6"></div>
                  <div className="absolute inset-4 bg-white rounded-[3rem] -rotate-3 border-2 border-hugsberry-cream"></div>
                  
-                 <img 
-                   src="https://images.unsplash.com/photo-1609357910320-e6fb7eb77796?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                   alt="Indian Baby in Ethnic Wear" 
-                   className="absolute inset-0 w-full h-full object-cover rounded-[3rem] shadow-2xl z-10"
-                 />
+                <img 
+                  src="/images/IMG_3101.jpg" 
+                  alt="Indian Baby in Ethnic Wear" 
+                  className="absolute inset-0 w-full h-full object-cover rounded-[3rem] shadow-2xl z-10"
+                />
                  
                  {/* Floating Sticker */}
                  <div className="absolute -bottom-6 -left-6 z-20 bg-white p-5 rounded-full shadow-xl flex flex-col items-center justify-center w-36 h-36 rotate-12 border-4 border-hugsberry-cream">
@@ -191,8 +191,8 @@ const App: React.FC = () => {
             <div className="bg-white rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center shadow-sm border border-gray-100">
                <div className="w-full md:w-1/2">
                   <div className="grid grid-cols-2 gap-4">
-                    <img className="rounded-2xl w-full h-48 object-cover -translate-y-4 shadow-md" src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cotton Fabric Texture" />
-                    <img className="rounded-2xl w-full h-48 object-cover translate-y-4 shadow-md" src="https://images.unsplash.com/photo-1620800233622-34d848949c9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Indian Baby playing" />
+                    <img className="rounded-2xl w-full h-48 object-cover -translate-y-4 shadow-md" src="/images/IMG_3103.jpg" alt="Cotton Fabric Texture" />
+                    <img className="rounded-2xl w-full h-48 object-cover translate-y-4 shadow-md" src="/images/IMG_3102.jpg" alt="Indian Baby playing" />
                   </div>
                </div>
                <div className="w-full md:w-1/2 space-y-6">
@@ -261,7 +261,7 @@ const App: React.FC = () => {
          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
             <div className="text-center md:text-left">
                <div className="bg-white/10 p-4 rounded-2xl inline-block mb-4">
-                 <HugsberryLogo size="md" className="text-white mix-blend-screen filter brightness-0 invert" />
+                 <HugsberryLogo size="md" className="brightness-0 invert" />
                </div>
                <p className="text-gray-300 text-sm max-w-xs mx-auto md:mx-0">
                  Handmade with love in India. Sustainable, culturally rooted, and safe for your little explorer.

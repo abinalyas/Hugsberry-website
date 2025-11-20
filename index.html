@@ -3,7 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hugsberry | Ethical Indian Kidswear</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Hugsberry | Ethical Indian Kidswear - Organic Baby Clothes Made with Love</title>
+    <meta name="title" content="Hugsberry | Ethical Indian Kidswear - Organic Baby Clothes Made with Love" />
+    <meta name="description" content="Ethical, handmade, and culturally rooted kidswear. Hugsberry offers premium organic cotton baby clothes, Jhablas, festive sets, and rompers for modern Indian parents who value tradition, safety, and sustainability. 100% organic, ethically handmade in India." />
+    <meta name="keywords" content="organic baby clothes, Indian kidswear, ethical baby clothes, organic cotton baby clothes, handmade baby clothes India, baby Jhabla, organic rompers, sustainable baby clothes, GOTS certified baby clothes, culturally rooted kidswear, Indian baby dresses" />
+    <meta name="author" content="Hugsberry" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="canonical" href="https://hugsberry.in" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hugsberry.in" />
+    <meta property="og:title" content="Hugsberry | Ethical Indian Kidswear - Organic Baby Clothes Made with Love" />
+    <meta property="og:description" content="Ethical, handmade, and culturally rooted kidswear. Premium organic cotton baby clothes for modern Indian parents who value tradition, safety, and sustainability." />
+    <meta property="og:image" content="https://hugsberry.in/images/Logo.svg" />
+    <meta property="og:site_name" content="Hugsberry" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hugsberry.in" />
+    <meta property="twitter:title" content="Hugsberry | Ethical Indian Kidswear - Organic Baby Clothes Made with Love" />
+    <meta property="twitter:description" content="Ethical, handmade, and culturally rooted kidswear. Premium organic cotton baby clothes for modern Indian parents who value tradition, safety, and sustainability." />
+    <meta property="twitter:image" content="https://hugsberry.in/images/Logo.svg" />
+    <meta property="twitter:creator" content="@hugs.berry" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#FFFDF7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Hugsberry" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/Logo.svg" />
+    <link rel="apple-touch-icon" href="/images/Logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +90,39 @@
       .text-outline {
         text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
       }
+
+      /* Logo Animation Styles */
+      .eyes-group {
+        animation: bounce 1s infinite ease-in-out;
+      }
+
+      .eye {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: blink 4s infinite;
+      }
+
+      .leaf {
+        transform-box: fill-box;
+        transform-origin: bottom left;
+        transform: translateZ(0);
+        animation: sway 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      @keyframes blink {
+        0%, 45%, 55%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+      }
+
+      @keyframes sway {
+        0% { transform: rotate(-5deg); }
+        100% { transform: rotate(10deg); }
+      }
     </style>
   <script type="importmap">
 {
@@ -64,6 +135,60 @@
 }
 </script>
 <link rel="stylesheet" href="/index.css">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hugsberry",
+  "description": "Ethical, handmade, and culturally rooted kidswear. Premium organic cotton baby clothes for modern Indian parents.",
+  "url": "https://hugsberry.in",
+  "logo": "https://hugsberry.in/images/Logo.svg",
+  "sameAs": [
+    "https://www.instagram.com/hugs.berry"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "availableLanguage": ["English", "Hindi"]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Hugsberry",
+  "description": "Online store for ethical, handmade, organic baby clothes and kidswear",
+  "url": "https://hugsberry.in",
+  "image": "https://hugsberry.in/images/Logo.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Hugsberry",
+  "url": "https://hugsberry.in",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://hugsberry.in/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
   <body class="bg-hugsberry-cream text-hugsberry-navy antialiased selection:bg-hugsberry-red selection:text-white">
     <div id="root"></div>
