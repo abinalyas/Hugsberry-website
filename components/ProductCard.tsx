@@ -1,6 +1,7 @@
 import React from 'react';
 import { Product } from '../types';
 import { INSTAGRAM_URL } from '../constants';
+import { getAssetPath } from '../utils/paths';
 
 interface ProductCardProps {
   product: Product;
@@ -23,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Product Image */}
           <div className="relative aspect-square overflow-hidden">
             <img
-              src={product.image}
+              src={getAssetPath(product.image)}
               alt={product.name}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />

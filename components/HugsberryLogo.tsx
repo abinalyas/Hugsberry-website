@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetPath } from '../utils/paths';
 
 interface HugsberryLogoProps {
   size?: 'sm' | 'md' | 'lg';
@@ -14,7 +15,7 @@ const HugsberryLogo: React.FC<HugsberryLogoProps> = ({ size = 'md', className = 
 
   return (
     <img 
-      src="/images/Logo.svg" 
+      src={getAssetPath('/images/Logo.svg')} 
       alt="Hugsberry Logo" 
       className={`${sizeClasses[size]} ${className}`}
     />

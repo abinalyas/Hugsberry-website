@@ -5,6 +5,7 @@ import AnimatedHugsberryLogo from './components/AnimatedHugsberryLogo';
 import ProductCard from './components/ProductCard';
 import { PRODUCTS, TESTIMONIALS, INSTAGRAM_URL } from './constants';
 import { ArrowRight, Star, Leaf, Heart, Instagram, Recycle, Droplets, Sun } from 'lucide-react';
+import { getAssetPath } from './utils/paths';
 
 const App: React.FC = () => {
   return (
@@ -58,7 +59,7 @@ const App: React.FC = () => {
                  <div className="absolute inset-4 bg-white rounded-[3rem] -rotate-3 border-2 border-hugsberry-cream"></div>
                  
                 <img 
-                  src="/images/IMG_3101.jpg" 
+                  src={getAssetPath("/images/IMG_3101.jpg")} 
                   alt="Indian Baby in Ethnic Wear" 
                   className="absolute inset-0 w-full h-full object-cover rounded-[3rem] shadow-2xl z-10"
                 />
@@ -191,8 +192,8 @@ const App: React.FC = () => {
             <div className="bg-white rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center shadow-sm border border-gray-100">
                <div className="w-full md:w-1/2">
                   <div className="grid grid-cols-2 gap-4">
-                    <img className="rounded-2xl w-full h-48 object-cover -translate-y-4 shadow-md" src="/images/IMG_3103.jpg" alt="Cotton Fabric Texture" />
-                    <img className="rounded-2xl w-full h-48 object-cover translate-y-4 shadow-md" src="/images/IMG_3102.jpg" alt="Indian Baby playing" />
+                    <img className="rounded-2xl w-full h-48 object-cover -translate-y-4 shadow-md" src={getAssetPath("/images/IMG_3103.jpg")} alt="Cotton Fabric Texture" />
+                    <img className="rounded-2xl w-full h-48 object-cover translate-y-4 shadow-md" src={getAssetPath("/images/IMG_3102.jpg")} alt="Indian Baby playing" />
                   </div>
                </div>
                <div className="w-full md:w-1/2 space-y-6">
