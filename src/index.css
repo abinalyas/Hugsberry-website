@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @theme {
   --color-hugsberry-navy: #1C2E4A;
   --color-hugsberry-green: #2ECC71;
@@ -16,6 +12,10 @@
   
   --radius-4xl: 2.5rem;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Ensure font classes are available */
 .font-sans {
