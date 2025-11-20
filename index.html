@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hugsberry | Ethical Indian Kidswear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hugsberry: {
+                navy: '#1C2E4A', // Dark blue from logo
+                green: '#2ECC71', // Bright green leaf color
+                cream: '#FFFDF7', // Warm background
+                yellow: '#FFD54F', // Playful accent
+                pink: '#FF8A80', // Playful accent
+                blue: '#64B5F6', // Playful accent
+                red: '#FF5252', // Christmas accent
+              }
+            },
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              display: ['Fredoka', 'cursive'],
+            },
+            borderRadius: {
+              '4xl': '2.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFFDF7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #E2E8F0;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #CBD5E1;
+      }
+      .text-outline {
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-hugsberry-cream text-hugsberry-navy antialiased selection:bg-hugsberry-red selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
