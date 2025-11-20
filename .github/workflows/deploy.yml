@@ -31,7 +31,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
+      - name: Determine base path
+        id: base_path
+        run: |
+          if [ -f "public/CNAME" ]; then
+            echo "base=/" >> $GITHUB_OUTPUT
+            echo "Using custom domain - base path: /"
+          else
+            echo "base=/Hugsberry-website/" >> $GITHUB_OUTPUT
+            echo "Using project page - base path: /Hugsberry-website/"
+          fi
+      
       - name: Build
+        env:
+          VITE_BASE: ${{ steps.base_path.outputs.base }}
         run: npm run build
       
       - name: Setup Pages
