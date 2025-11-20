@@ -8,11 +8,11 @@ const AnimatedHugsberryLogo: React.FC<AnimatedHugsberryLogoProps> = ({ className
   return (
     <svg 
       width="900" 
-      height="auto" 
       viewBox="0 -100 1581 600" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
       className={`w-48 md:w-64 h-auto ${className}`}
+      preserveAspectRatio="xMidYMid meet"
     >
       {/* Static Letters */}
       <path d="M271.275 298.08C289.748 321.906 327.319 315.648 337.953 286.63C342.746 273.552 338.85 259.65 355.435 258.264C368.769 257.149 380.654 259.158 379.972 276.595C377.599 337.234 318.368 370.28 268.163 348.052C240.253 335.697 220.407 302.42 223.275 269.785C224.359 257.42 236.796 257.561 246.243 258.254C264.192 259.56 259.548 273.291 265.173 287.072C266.5 290.326 269.191 295.398 271.266 298.08H271.275Z" fill="#1D334C"/>

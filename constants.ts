@@ -2,13 +2,21 @@ import { Product, Testimonial } from './types';
 
 export const INSTAGRAM_URL = "https://www.instagram.com/hugs.berry?igsh=c2hpenh4bHNsNmE5&utm_source=qr";
 
+// Helper to get image path with base URL
+const getImagePath = (path: string): string => {
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const base = import.meta.env.BASE_URL || '/';
+  const baseWithSlash = base.endsWith('/') ? base : `${base}/`;
+  return `${baseWithSlash}${cleanPath}`;
+};
+
 export const PRODUCTS: Product[] = [
   {
     id: 1,
     name: "Strawberry Fields Smocked Dress",
     price: 1899,
     category: "Heritage",
-    image: "/images/IMG_3101.jpg", 
+    image: getImagePath("images/IMG_3101.jpg"), 
     isNew: true
   },
   {
@@ -16,14 +24,14 @@ export const PRODUCTS: Product[] = [
     name: "Little Lion Organic Lounge Set",
     price: 1499,
     category: "Everyday",
-    image: "/images/IMG_3103.jpg", 
+    image: getImagePath("images/IMG_3103.jpg"), 
   },
   {
     id: 3,
     name: "Nordic Pine Festive Set",
     price: 1299,
     category: "Winter Edit",
-    image: "/images/IMG_3104.jpg", 
+    image: getImagePath("images/IMG_3104.jpg"), 
     isNew: true
   },
   {
@@ -31,14 +39,14 @@ export const PRODUCTS: Product[] = [
     name: "Polar Pals Zip Suit",
     price: 999,
     category: "Sleepwear",
-    image: "/images/IMG_3102.jpg", 
+    image: getImagePath("images/IMG_3102.jpg"), 
   },
   {
     id: 5,
     name: "Signature Hugsberry Vest",
     price: 799,
     category: "Essentials",
-    image: "/images/IMG_3105.jpg", 
+    image: getImagePath("images/IMG_3105.jpg"), 
   }
 ];
 

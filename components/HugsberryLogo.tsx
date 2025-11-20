@@ -5,6 +5,14 @@ interface HugsberryLogoProps {
   className?: string;
 }
 
+// Helper to get image path with base URL
+const getImagePath = (path: string): string => {
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const base = import.meta.env.BASE_URL || '/';
+  const baseWithSlash = base.endsWith('/') ? base : `${base}/`;
+  return `${baseWithSlash}${cleanPath}`;
+};
+
 const HugsberryLogo: React.FC<HugsberryLogoProps> = ({ size = 'md', className = '' }) => {
   const sizeClasses = {
     sm: 'h-8 w-auto',
@@ -14,7 +22,7 @@ const HugsberryLogo: React.FC<HugsberryLogoProps> = ({ size = 'md', className = 
 
   return (
     <img 
-      src="/images/Logo.svg" 
+      src={getImagePath("images/Logo.svg")} 
       alt="Hugsberry Logo" 
       className={`${sizeClasses[size]} ${className}`}
     />
