@@ -28,13 +28,13 @@ const App: React.FC = () => {
                  <span>Ethical. Handmade. Culturally Rooted.</span>
               </div>
               
-              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-hugsberry-navy leading-[0.95] mb-8 tracking-tight">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-hugsberry-navy leading-[0.95] mb-8 tracking-tight">
                 Roots <br/>
                 Woven with <br/>
                 <span className="text-hugsberry-green">Pure Love</span>
               </h1>
               
-              <p className="text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Premium organic kidswear inspired by our heritage. From festive favorites to everyday essentials, made for your little one's big adventures.
               </p>
               
@@ -132,7 +132,7 @@ const App: React.FC = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-hugsberry-green font-bold tracking-widest uppercase text-sm mb-2 block">Small Batch • Big Love</span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-hugsberry-navy mb-4">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-hugsberry-navy mb-4">
             Fresh from the <span className="relative inline-block px-2 z-10">
               Loom
               <div className="absolute bottom-2 left-0 w-full h-3 bg-hugsberry-yellow/60 -z-10 -rotate-2"></div>
@@ -168,7 +168,7 @@ const App: React.FC = () => {
            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
              <div>
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-bold mb-4">Bestseller</div>
-                <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+                <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                   The Welcome Baby Kit
                 </h2>
                 <p className="text-white/80 text-lg mb-6 max-w-md">
@@ -200,7 +200,7 @@ const App: React.FC = () => {
                   {/* Animated Logo Here */}
                   <AnimatedHugsberryLogo className="w-48 md:w-64 mb-4 origin-left" />
                   
-                  <h3 className="font-display text-3xl font-bold text-hugsberry-navy">
+                  <h3 className="font-display text-2xl md:text-3xl font-bold text-hugsberry-navy">
                     Made for the future you want to create.
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -234,7 +234,7 @@ const App: React.FC = () => {
       {/* --- TESTIMONIALS --- */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center mb-12">
-           <h2 className="font-display text-3xl font-bold text-hugsberry-navy mb-4">Moms Trust <span className="text-hugsberry-green">Hugsberry</span></h2>
+           <h2 className="font-display text-2xl md:text-3xl font-bold text-hugsberry-navy mb-4">Moms Trust <span className="text-hugsberry-green">Hugsberry</span></h2>
            <p className="text-gray-500">Hear from modern Indian parents who love us</p>
         </div>
         
