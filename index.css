@@ -15,9 +15,16 @@
   --radius-4xl: 2.5rem;
 }
 
-/* Responsive base font size - scales with viewport width */
+/* Mobile devices - normal font sizes */
 html {
-  font-size: clamp(12px, 0.7vw + 0.4rem, 14px);
+  font-size: clamp(14px, 0.875vw + 0.5rem, 16px);
+}
+
+/* Desktop screens (1024px and above) - reduced font sizes */
+@media (min-width: 1024px) and (max-width: 2559px) {
+  html {
+    font-size: clamp(12px, 0.7vw + 0.4rem, 14px);
+  }
 }
 
 /* For 2K screens (2560px width), scale down to ~80% */
