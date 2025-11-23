@@ -28,13 +28,13 @@ const App: React.FC = () => {
                  <span>Ethical. Handmade. Culturally Rooted.</span>
               </div>
               
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-hugsberry-navy leading-[0.95] mb-8 tracking-tight">
+              <h1 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-hugsberry-navy leading-[0.95] mb-8 tracking-tight">
                 Roots <br/>
                 Woven with <br/>
                 <span className="text-hugsberry-green">Pure Love</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Premium organic kidswear inspired by our heritage. From festive favorites to everyday essentials, made for your little one's big adventures.
               </p>
               
@@ -43,7 +43,7 @@ const App: React.FC = () => {
                   href={INSTAGRAM_URL} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-hugsberry-navy text-white font-bold text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-3 md:px-10 md:py-4 rounded-full bg-hugsberry-navy text-white font-bold text-base md:text-lg shadow-xl shadow-blue-900/10 hover:bg-hugsberry-green hover:shadow-green-200 hover:-translate-y-1 transition-all duration-300"
                 >
                   <Instagram className="mr-2" size={24} />
                   Shop on Instagram
@@ -65,8 +65,8 @@ const App: React.FC = () => {
                 />
                  
                  {/* Floating Sticker */}
-                 <div className="absolute -bottom-6 -left-6 z-20 bg-white p-5 rounded-full shadow-xl flex flex-col items-center justify-center w-36 h-36 rotate-12 border-4 border-hugsberry-cream">
-                    <span className="font-display font-bold text-3xl text-hugsberry-navy">100%</span>
+                 <div className="absolute -bottom-6 -left-6 z-20 bg-white p-4 md:p-5 rounded-full shadow-xl flex flex-col items-center justify-center w-28 h-28 md:w-36 md:h-36 rotate-12 border-4 border-hugsberry-cream">
+                    <span className="font-display font-bold text-2xl md:text-3xl text-hugsberry-navy">100%</span>
                     <span className="text-xs font-bold text-hugsberry-green uppercase tracking-wider text-center">Homegrown</span>
                  </div>
                </div>
@@ -82,44 +82,44 @@ const App: React.FC = () => {
               
               {/* Badge 1: Organic */}
               <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-green flex items-center justify-center text-hugsberry-green bg-hugsberry-green/5 group-hover:bg-hugsberry-green group-hover:text-white transition-colors duration-300">
-                   <Leaf size={32} strokeWidth={1.5} />
+                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-green flex items-center justify-center text-hugsberry-green bg-hugsberry-green/5 group-hover:bg-hugsberry-green group-hover:text-white transition-colors duration-300">
+                   <Leaf size={28} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">100% Organic</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">100% Organic</p>
                    <p className="text-sm text-gray-500">Certified GOTS Cotton</p>
                  </div>
               </div>
 
               {/* Badge 2: Handmade */}
               <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-pink flex items-center justify-center text-hugsberry-pink bg-hugsberry-pink/5 group-hover:bg-hugsberry-pink group-hover:text-white transition-colors duration-300">
-                   <Heart size={32} strokeWidth={1.5} />
+                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-pink flex items-center justify-center text-hugsberry-pink bg-hugsberry-pink/5 group-hover:bg-hugsberry-pink group-hover:text-white transition-colors duration-300">
+                   <Heart size={28} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Ethically Handmade</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Ethically Handmade</p>
                    <p className="text-sm text-gray-500">Fair wages for artisans</p>
                  </div>
               </div>
 
               {/* Badge 3: Eco-Friendly */}
               <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-blue flex items-center justify-center text-hugsberry-blue bg-hugsberry-blue/5 group-hover:bg-hugsberry-blue group-hover:text-white transition-colors duration-300">
-                   <Recycle size={32} strokeWidth={1.5} />
+                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-blue flex items-center justify-center text-hugsberry-blue bg-hugsberry-blue/5 group-hover:bg-hugsberry-blue group-hover:text-white transition-colors duration-300">
+                   <Recycle size={28} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Plastic-Free</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Plastic-Free</p>
                    <p className="text-sm text-gray-500">Sustainable Packaging</p>
                  </div>
               </div>
               
               {/* Badge 4: Safe */}
               <div className="flex flex-col md:flex-row items-center gap-4 group">
-                 <div className="w-16 h-16 rounded-full border-2 border-hugsberry-yellow flex items-center justify-center text-hugsberry-yellow bg-hugsberry-yellow/5 group-hover:bg-hugsberry-yellow group-hover:text-hugsberry-navy transition-colors duration-300">
-                   <Sun size={32} strokeWidth={1.5} />
+                 <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-hugsberry-yellow flex items-center justify-center text-hugsberry-yellow bg-hugsberry-yellow/5 group-hover:bg-hugsberry-yellow group-hover:text-hugsberry-navy transition-colors duration-300">
+                   <Sun size={28} className="md:w-8 md:h-8" strokeWidth={1.5} />
                  </div>
                  <div className="text-center md:text-left">
-                   <p className="font-bold text-hugsberry-navy text-lg">Skin Safe</p>
+                   <p className="font-bold text-hugsberry-navy text-base md:text-lg">Skin Safe</p>
                    <p className="text-sm text-gray-500">Azo-free non-toxic dyes</p>
                  </div>
               </div>
@@ -132,7 +132,7 @@ const App: React.FC = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-hugsberry-green font-bold tracking-widest uppercase text-sm mb-2 block">Small Batch • Big Love</span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-hugsberry-navy mb-4">
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-hugsberry-navy mb-4">
             Fresh from the <span className="relative inline-block px-2 z-10">
               Loom
               <div className="absolute bottom-2 left-0 w-full h-3 bg-hugsberry-yellow/60 -z-10 -rotate-2"></div>
@@ -155,7 +155,7 @@ const App: React.FC = () => {
              href={INSTAGRAM_URL} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="inline-flex items-center gap-2 text-xl font-bold text-hugsberry-navy hover:text-hugsberry-green transition-colors border-b-2 border-hugsberry-navy hover:border-hugsberry-green pb-1"
+             className="inline-flex items-center gap-2 text-lg md:text-xl font-bold text-hugsberry-navy hover:text-hugsberry-green transition-colors border-b-2 border-hugsberry-navy hover:border-hugsberry-green pb-1"
            >
              See Full Catalog on Instagram <ArrowRight size={24} />
            </a>
@@ -168,10 +168,10 @@ const App: React.FC = () => {
            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
              <div>
                 <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-bold mb-4">Bestseller</div>
-                <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                <h2 className="font-display text-xl md:text-2xl lg:text-3xl font-bold mb-4">
                   The Welcome Baby Kit
                 </h2>
-                <p className="text-white/80 text-lg mb-6 max-w-md">
+                <p className="text-white/80 text-base md:text-lg mb-6 max-w-md">
                   A curated set of our softest organic cotton jhablas and nappies. The perfect gift for a new Indian mom. Use code <span className="font-mono font-bold text-hugsberry-yellow">HELLO-BABY</span> in DM.
                 </p>
              </div>
@@ -210,7 +210,7 @@ const App: React.FC = () => {
                     Our USP? Culturally rooted designs, hygienic handmade production, and sustainable packaging that cares for the world they will grow up in.
                   </p>
                   <div className="pt-4">
-                     <p className="font-display font-bold text-xl text-hugsberry-navy mb-2">Why Hugsberry?</p>
+                     <p className="font-display font-bold text-lg md:text-xl text-hugsberry-navy mb-2">Why Hugsberry?</p>
                      <ul className="space-y-3">
                        <li className="flex items-center gap-2 text-gray-600">
                          <Droplets size={18} className="text-hugsberry-blue" />
