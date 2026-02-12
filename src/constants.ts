@@ -5,40 +5,55 @@ export const INSTAGRAM_URL = "https://www.instagram.com/hugs.berry?igsh=c2hpenh4
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Strawberry Fields Smocked Dress",
-    price: 1899,
-    category: "Heritage",
-    image: "/images/IMG_3101.jpg", 
+    name: "Midnight Sprount",
+    price: 1499,
+    category: "Set",
+    image: "/images/products/black-suspenders-set.jpg",
     isNew: true
   },
   {
     id: 2,
-    name: "Little Lion Organic Lounge Set",
-    price: 1499,
-    category: "Everyday",
-    image: "/images/IMG_3103.jpg", 
+    name: "Red Valley",
+    price: 1199,
+    category: "Dress",
+    image: "/images/products/red-dress.jpg",
   },
   {
     id: 3,
-    name: "Nordic Pine Festive Set",
-    price: 1299,
-    category: "Winter Edit",
-    image: "/images/IMG_3104.jpg", 
+    name: "Snowdrop Blue",
+    price: 1599,
+    category: "Dress",
+    image: "/images/products/blue-snowflake-dress.jpg",
     isNew: true
   },
   {
     id: 4,
-    name: "Polar Pals Zip Suit",
-    price: 999,
-    category: "Sleepwear",
-    image: "/images/IMG_3102.jpg", 
+    name: "Crimson Whimsy",
+    price: 1299,
+    category: "Dress",
+    image: "/images/products/plaid-bow-dress.jpg",
   },
   {
     id: 5,
-    name: "Signature Hugsberry Vest",
-    price: 799,
-    category: "Essentials",
-    image: "/images/IMG_3105.jpg", 
+    name: "Berry Button",
+    price: 989,
+    category: "Romper",
+    image: "/images/products/red-suspenders-romper.jpg",
+  },
+  {
+    id: 6,
+    name: "Little Ember",
+    price: 1499,
+    category: "Set",
+    image: "/images/products/red-suspenders-set.jpg",
+    isNew: true
+  },
+  {
+    id: 7,
+    name: "Evergreen Tale",
+    price: 1799,
+    category: "Suit",
+    image: "/images/products/green-check-suit.jpg",
   }
 ];
 
